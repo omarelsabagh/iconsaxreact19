@@ -2,10 +2,6 @@
   "name": "iconsaxreact19fas",
   "version": "1.0.0",
   "description": "fix iconsax issues in react19",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/omarelsabagh/iconsaxreact19.git"
@@ -16,11 +12,20 @@
   ],
   "author": "omar abdelhamid",
   "license": "ISC",
-  "types": "./index.d.ts",
   "bugs": {
     "url": "https://github.com/omarelsabagh/iconsaxreact19/issues"
   },
   "homepage": "https://github.com/omarelsabagh/iconsaxreact19#readme",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "preBuild": "rm -rf dist",
+    "build:bundle": "rollup --config rollup.config.js",
+    "build": "yarn preBuild && yarn build:bundle",
+    "publish": "yarn publish"
+  },
   "files": [
     "dist"
   ],
