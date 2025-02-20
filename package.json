@@ -2,20 +2,20 @@
   "name": "iconsaxreact19fas",
   "version": "1.0.0",
   "description": "fix iconsax issues in react19",
+  "author": "omar abdelhamid",
+  "homepage": "https://github.com/omarelsabagh/iconsaxreact19#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omarelsabagh/iconsaxreact19.git"
+    "url": "git+https://github.com/omarelsabagh/iconsaxreact19.git",
+    "directory": "packages/iconsax-react"
   },
-  "keywords": [
-    "iconsax",
-    "react19"
-  ],
-  "author": "omar abdelhamid",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/omarelsabagh/iconsaxreact19/issues"
   },
-  "homepage": "https://github.com/omarelsabagh/iconsaxreact19#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "ISC",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -26,6 +26,12 @@
     "build": "yarn preBuild && yarn build:bundle",
     "publish": "yarn publish"
   },
+  "keywords": [
+    "icons",
+    "react",
+    "icon components",
+    "iconsax"
+  ],
   "files": [
     "dist"
   ],
